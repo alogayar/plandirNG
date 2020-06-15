@@ -1,8 +1,25 @@
 <div class="layout-content-section">
-    <app-section-header textsubheader="Estilos personalizados para los botones <p-button>"></app-section-header>
-    <app-section-html tipo="cards"></app-section-html>
+  <app-section-header
+    textsubheader="Estilos personalizados para los botones <p-button>"
+  ></app-section-header>
 
-    
-    
+  <div class="container">
+      <div class="col-12 mt-3">
+          <p-card header="">
+            <div>
+              <p-button label="Click"></p-button>
+              <p-button icon="fa fa-check" label="Click"></p-button>
+              <p-button icon="fa fa-check" iconPos="right" label="Click"></p-button>
+              <p-button icon="fa fa-check"></p-button>
+              <p-button
+                icon="pi pi-check"
+                [disabled]="true"
+                label="Disabled"
+              ></p-button>
+            </div>
+          </p-card>
 
+      </div>
+  </div>
+  <app-section-html tipo="button"></app-section-html>
 </div>
