@@ -1,0 +1,42 @@
+<div class="layout-content-section">
+    <app-section-header textsubheader="Estilos personalizados para los tarjetas <p-card>"></app-section-header>
+
+    <div class="container layout-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <p-card header="Advanced Card" subheader="Subheader" [style]="{width: '360px'}" styleClass="ui-card-shadow">
+                        <p-header>
+                            <img  src="../../../../assets/img/logo.jpg">
+                        </p-header>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</div>
+                        <p-footer>
+                            <button pButton type="button" label="Save" icon="fa fa-check" style="margin-right: .25em"></button>
+                            <button pButton type="button" label="Cancel" icon="fa fa-times" class="ui-button-secondary"></button>
+                        </p-footer>
+                    </p-card>
+                </div>
+                <div class="col-6">
+                    <p-card header="Simple Card" [style]="{width: '360px'}">
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</div>
+                    </p-card>
+                </div>
+            </div>
+
+        </div>
+        <div class="container fluid">
+            <p-card header="Simple Card">
+                <pre>
+                    <code class="language-sql" pCode>
+                    {{html}}
+                    </code>
+                    </pre>
+            </p-card>
+    
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,225 @@
+$color-primario: #698e02;
+$color-secundario: #4d4d4d;
+//$color-secundario: #757575;
+//$color-seccion-cabecera: #a6c526;
+$color-seccion-cabecera: #6d6d6d;
+//#b4cd4d
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$fuente: "Poppins", sans-serif;
+$fuente-Roboto: "Roboto";
+
+/* Animated */
+/* You can add global styles to this file, and also import other style files */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+/*-----------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fuente;
+
+  .header {
+    background-color: $color-secundario;
+    display: block;
+    padding: 0;
+    height: 64px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9997;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    //border: 2px solid red;
+    ul {
+      list-style-type: none;
+      //border: 2px solid yellow;
+      display: flex;
+      align-content: center;
+
+      &.nav-right {
+        margin-right: 5px;
+        li {
+          font-size: 14px;
+          margin: 0 10px;
+          //border: 2px solid #000;
+
+          a {
+            display: block;
+            padding: 0 20px;
+          }
+          &:hover {
+            background-color: rgba($color: #fff, $alpha: 0.2);
+          }
+        }
+      }
+
+      li {
+        font-size: 14px;
+        margin: auto;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .img-logo {
+    height: 50px;
+    margin-left: 20px;
+    padding: 1px;
+  }
+
+  .text-logo {
+    font-weight: 000;
+    font-size: 25px !important;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 64px;
+    height: calc(100% - 64px);
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 250px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+
+    .sidebar_menu {
+      overflow-y: auto;
+      span {
+        font-size: 14px;
+        width: 100%;
+        height: 50px;
+
+        padding: 1rem;
+        background-color: #f6fce9;
+        background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3f3f3' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+        color: #6c757c;
+        font-weight: 700;
+        outline: none;
+
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+
+        i {
+          padding: 0 6px;
+        }
+      }
+      div {
+        padding: 12px 15px;
+        overflow: hidden;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+
+        a {
+          width: 100%;
+          display: block;
+          padding: 6px;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 14px;
+          color: #404c51;
+          text-decoration: none;
+          //border: 1px solid #333;
+          &:hover {
+            background-color: rgba($color: #000, $alpha: 0.1);
+            color: $color-primario;
+          }
+        }
+      }
+    }
+  }
+
+  .layout-content {
+    margin-left: 250px;    
+    background-color: #fff;
+    margin-top: 64px;
+    //border: 2px dotted green;
+  }
+  
+  .layout-content-section {
+    //border: 2px solid red;
+    .layout-section {
+      margin-top: 40px;
+      //border: 2px dotted green;      
+    }
+  }
+
+
+  .layout-content-section-cabecera {
+    padding: 20px 20px;
+    height: auto;
+    background-color:$color-seccion-cabecera;
+    color:#fff;
+    span {
+      font-size: 16px;
+      display: block;
+      padding-top: 10px;
+      padding-left: 10px;
+      &.section-titulo {
+        font-size: 30px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+    
+  
+
+

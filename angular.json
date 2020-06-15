@@ -23,10 +23,17 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.css"
+            "styles": [             
+              "node_modules/primeng/resources/primeng.min.css",
+              "dist/css/plandirNG.css",
+              "src/styles.css",
+              "node_modules/prismjs/themes/prism.css"
+
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/prismjs/prism.js"
+            ]
           },
           "configurations": {
             "production": {
