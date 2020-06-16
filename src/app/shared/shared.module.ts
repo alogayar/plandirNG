@@ -31,6 +31,7 @@ import { TabViewModule } from "primeng/tabview";
     BreadcrumbsComponent,
     SectionHeaderComponent,
     SectionHtmlComponent,
+    
   ],
 })
 export class SharedModule {}

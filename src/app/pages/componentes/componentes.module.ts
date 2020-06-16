@@ -1,21 +1,23 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
-import { ButtonModule } from 'primeng/button';
-import { ButtonsComponent } from './buttons/buttons.component';
-import { TabViewModule } from 'primeng/tabview';
-import { SharedModule } from 'src/app/shared/shared.module';
-import { ToastModule } from 'primeng/toast';
-import { ComponentesService } from '../services/componentes.service';
-import { HttpClientModule } from '@angular/common/http';
-import { componentesRoutes } from './componentes.routes';
-import { CardModule } from 'primeng/card';
-import { CardsComponent } from './cards/cards.component';
+import { ButtonModule } from "primeng/button";
+import { ButtonsComponent } from "./buttons/buttons.component";
+import { TabViewModule } from "primeng/tabview";
+import { SharedModule } from "src/app/shared/shared.module";
+import { ToastModule } from "primeng/toast";
+import { ComponentesService } from "../services/componentes.service";
+import { HttpClientModule } from "@angular/common/http";
+import { componentesRoutes } from "./componentes.routes";
+import { CardModule } from "primeng/card";
+import { CardsComponent } from "./cards/cards.component";
+import { BreadcrumbModule } from "primeng/breadcrumb";
+import { InputsComponent } from "./inputs/inputs.component";
+import { BreadcrumsComponent } from './breadcrums/breadcrums.component';
 
 @NgModule({
-  declarations: [
-    ButtonsComponent,
-    CardsComponent],
+  declarations: [ButtonsComponent, CardsComponent, InputsComponent, BreadcrumsComponent],
+
   imports: [
     CommonModule,
     componentesRoutes,
@@ -24,17 +26,10 @@ import { CardsComponent } from './cards/cards.component';
     SharedModule,
     TabViewModule,
     ToastModule,
-    CardModule
-
-
+    CardModule,
+    BreadcrumbModule,
   ],
-  exports: [
-    SharedModule,
-    CardModule
-
-  ],
-  providers: [
-    ComponentesService
-  ]
+  exports: [SharedModule, CardModule],
+  providers: [ComponentesService],
 })
-export class ComponentesModule { }
+export class ComponentesModule {}

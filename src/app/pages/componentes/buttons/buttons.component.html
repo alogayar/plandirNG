@@ -3,23 +3,42 @@
     textsubheader="Estilos personalizados para los botones <p-button>"
   ></app-section-header>
 
-  <div class="container">
-      <div class="col-12 mt-3">
-          <p-card header="">
-            <div>
-              <p-button label="Click"></p-button>
-              <p-button icon="fa fa-check" label="Click"></p-button>
-              <p-button icon="fa fa-check" iconPos="right" label="Click"></p-button>
-              <p-button icon="fa fa-check"></p-button>
-              <p-button
-                icon="pi pi-check"
-                [disabled]="true"
-                label="Disabled"
-              ></p-button>
-            </div>
-          </p-card>
-
-      </div>
+  <div class="container-fluid layout-section mt-4">
+    <p-tabView>
+      <p-tabPanel header="Botones" leftIcon="fas fa-file-invoice">
+        <p-card header="Boton principal">
+          <div>
+            <p-button label="Aceptar" class="mr-3" ></p-button>
+            <p-button icon="fa fa-check" class="mr-3" label="Aceptar"></p-button>
+            <p-button icon="fa fa-check" class="mr-3" iconPos="right" label="Aceptar"></p-button>
+            <p-button icon="fa fa-check" class="mr-3"></p-button>
+            <p-button icon="fa fa-check" [disabled]="true" label="Disabled"></p-button>
+          </div>
+        </p-card>
+        <p-card header="Boton con sombra">
+          <div>
+            <button pButton type="button" label="Primary" class="ui-button-raised mr-3"></button>
+            <button pButton type="button" label="Secondary" class="ui-button-raised ui-button-secondary mr-3"></button>
+            <button pButton type="button" label="Success" class="ui-button-raised ui-button-success mr-3"></button>
+            <button pButton type="button" label="Info" class="ui-button-raised ui-button-info mr-3"></button>
+            <button pButton type="button" label="Warning" class="ui-button-raised ui-button-warning mr-3"></button>
+            <button pButton type="button" label="Danger" class="ui-button-raised ui-button-danger"></button>
+          </div>
+        </p-card>
+        <p-card header="Boton con redondeo">
+          <div>
+            <button pButton type="button" label="Primary" class="ui-button-rounded mr-3"></button>
+            <button pButton type="button" label="Secondary" class="ui-button-rounded ui-button-secondary mr-3"></button>
+            <button pButton type="button" label="Success" class="ui-button-rounded ui-button-success mr-3"></button>
+            <button pButton type="button" label="Info" class="ui-button-rounded ui-button-info mr-3"></button>
+            <button pButton type="button" label="Warning" class="ui-button-rounded ui-button-warning mr-3"></button>
+            <button pButton type="button" label="Danger" class="ui-button-rounded ui-button-danger"></button>
+          </div>
+        </p-card>
+      </p-tabPanel>
+      <p-tabPanel header="Sass" leftIcon="fab fa-sass">
+        <app-section-html tipo="button"></app-section-html>
+      </p-tabPanel>
+    </p-tabView>
   </div>
-  <app-section-html tipo="button"></app-section-html>
 </div>

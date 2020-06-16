@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api/menuitem';
+import {MenuItem} from 'primeng/api';
 
 @Component({
-  selector: 'app-inputs',
-  templateUrl: './inputs.component.html',
-  styles: [
-  ]
+  selector: 'app-breadcrums',
+  templateUrl:'./breadcrums.component.html',  
+  styles: []
 })
-export class InputsComponent implements OnInit {
-  private items: MenuItem[];
+export class BreadcrumsComponent implements OnInit {
+  items: MenuItem[];
   constructor() { }
-
-  ngOnInit(): void {
+  
+  ngOnInit() {
     this.items = [
       {label:'Categories'},
       {label:'Sports'},

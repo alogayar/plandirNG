@@ -1,0 +1,23 @@
+<div class="layout-content-section">
+    <app-section-header textsubheader="Estilos personalizados para los migas de pan <p-breadcrumb>"></app-section-header>
+
+        <div class="container-fluid layout-section mt-4">
+            <p-tabView>
+              <p-tabPanel header="Breadcrums" leftIcon="fas fa-file-invoice">
+                <p-card>
+                  <div>
+                    <p-breadcrumb [model]="items"></p-breadcrumb>
+                  </div>
+                </p-card>
+                              
+              </p-tabPanel>
+              <p-tabPanel header="Sass" leftIcon="fab fa-sass">
+                <app-section-html tipo="breadcrums"></app-section-html>
+              </p-tabPanel>
+            </p-tabView>
+          </div>
+
+
+    
+
+</div>
