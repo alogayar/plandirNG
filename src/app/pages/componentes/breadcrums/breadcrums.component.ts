@@ -8,19 +8,19 @@ import {MenuItem} from 'primeng/api';
 })
 export class BreadcrumsComponent implements OnInit {
   items: MenuItem[];
+  home: MenuItem;
   constructor() { }
   
   ngOnInit() {
     this.items = [
-      {label:'Categories'},
-      {label:'Sports'},
-      {label:'Football'},
-      {label:'Countries'},
-      {label:'Spain'},
-      {label:'F.C. Barcelona'},
-      {label:'Squad'},
-      {label:'Lionel Messi', url: 'https://en.wikipedia.org/wiki/Lionel_Messi'}
+      {label:'Buscador contribuyentes'},
+      {label:'Informacion del contribuyente '},
+      {label:'Expedientes'},
+      {label:'Informacion del expediente'},
+    
   ];
+  this.home = {icon: 'fas fa-home'};
+
   }
 
 }
