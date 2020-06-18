@@ -1,0 +1,34 @@
+<div class="layout-content-section">
+    <app-section-header textsubheader="Estilos personalizados para los paneles <p-tabView>"></app-section-header>
+
+    <div class="container-fluid layout-section mt-4">
+        <p-tabView>
+            <p-tabPanel header="Tabs" leftIcon="fas fa-file-invoice">
+                <p-card header="Tabview por defecto">
+                    <div>
+                        <span>Componente para agrupar contenido con pestañas</span>
+                    </div>
+                </p-card>
+
+            </p-tabPanel>
+            <p-tabPanel header="Sass" leftIcon="fab fa-sass">
+                <app-section-html tipo="button"></app-section-html>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+    <div class="container-fluid layout-section mt-4">
+        <p-tabView>
+            <p-tabPanel header="Tabs" leftIcon="fas fa-file-invoice" [closable]=true>
+                <p-card header="Tabview con pestañas cerrables">
+                    <div>
+                        <span>Componente para agrupar contenido con pestañas que se cierran</span>
+                    </div>
+                </p-card>
+
+            </p-tabPanel>
+            <p-tabPanel header="Sass" leftIcon="fab fa-sass" [closable]=true>
+                <app-section-html tipo="tabs"></app-section-html>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>

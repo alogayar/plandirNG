@@ -1,27 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api/menuitem';
+
 
 @Component({
   selector: 'app-inputs',
   templateUrl: './inputs.component.html',
-  styles: [
+  styles: ['div span {display:block;margin-botom:0.5em}'
   ]
 })
 export class InputsComponent implements OnInit {
-  private items: MenuItem[];
+  val1:string;
+  val2:string;
+  val3:string;
+  val4:string;
+  val5:string;
+  val6:string;
+  value1: number = 42723;
+  checked: boolean;
+
   constructor() { }
 
   ngOnInit(): void {
-    this.items = [
-      {label:'Categories'},
-      {label:'Sports'},
-      {label:'Football'},
-      {label:'Countries'},
-      {label:'Spain'},
-      {label:'F.C. Barcelona'},
-      {label:'Squad'},
-      {label:'Lionel Messi', url: 'https://en.wikipedia.org/wiki/Lionel_Messi'}
-  ];
+
   }
 
 }
