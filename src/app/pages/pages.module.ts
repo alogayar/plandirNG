@@ -11,26 +11,27 @@ import { SharedModule } from '../shared/shared.module';
 
 
 
+
 @NgModule({
   declarations: [
     HomeComponent,
     EstructuraComponent,
-        
+
 
   ],
-  imports: [    
-    
+  imports: [
+
     pagesRoutes,
     ComponentesModule,
     SharedModule,
-    
+
   ],
   exports:[
     HomeComponent,
     EstructuraComponent,
     SharedModule,
-    ComponentesModule   
-    
+    ComponentesModule
+
   ]
 })
 export class PagesModule { }

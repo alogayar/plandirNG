@@ -1,4 +1,4 @@
-<div class="layout-content-section">
+<div class="layout-content-section animated fadeIn">
     <app-section-header textsubheader="Estilos personalizados para los botones <p-button>"></app-section-header>
 
     <div class="container-fluid layout-section mt-4">
@@ -28,11 +28,11 @@
 
                             </div>
 
-                           
+
                         </div>
                     </div>
                 </p-card>
-                <p-card header="Input Mask">
+                <p-card header="InputSwitch">
                     <div>
                         <div class="container">
                             <div class="row">
@@ -40,27 +40,39 @@
                                     <span>Basic</span>
                                     <p-inputSwitch [(ngModel)]="checked"></p-inputSwitch>
                                 </div>
-
-                                <div class="col-sm-6 col-md-4">
-                                    <span>SSN</span>
-                                    <div class="ui-inputgroup">
-                                        <span class="ui-inputgroup-addon"><i class="fas fa-user" style="line-height: 1.25;"></i></span>
-                                        <input type="text" pInputText placeholder="Usuario">         
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-6 col-md-4">
-                                    <span>Date</span>
-                                    <p-inputMask mask="99/99/9999" [(ngModel)]="val3" placeholder="99/99/9999"
-                                        slotChar="mm/dd/yyyy"></p-inputMask>
-                                </div>
-
                             </div>
-
-                           
                         </div>
                     </div>
                 </p-card>
+                <p-card header="Inputtext">
+                  <div>
+                      <div class="container">
+                          <div class="row">
+                              <div class="col-sm-6 col-md-4">
+                                  <span>Basic</span>
+                                  <input id="input" type="text" size="30" pInputText [(ngModel)]="text">
+                              </div>
+
+                              <div class="col-sm-6 col-md-4">
+                                  <span>SSN</span>
+                                  <div class="ui-inputgroup">
+                                      <span class="ui-inputgroup-addon"><i class="fas fa-user" style="line-height: 1.25;"></i></span>
+                                      <input type="text" pInputText placeholder="Usuario">
+                                  </div>
+                              </div>
+
+                              <div class="col-sm-6 col-md-4">
+                                  <span>Date</span>
+                                  <p-inputMask mask="99/99/9999" [(ngModel)]="val3" placeholder="99/99/9999"
+                                      slotChar="mm/dd/yyyy"></p-inputMask>
+                              </div>
+
+                          </div>
+
+
+                      </div>
+                  </div>
+              </p-card>
 
             </p-tabPanel>
             <p-tabPanel header="Sass" leftIcon="fab fa-sass">
