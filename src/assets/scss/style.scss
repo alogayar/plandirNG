@@ -2,7 +2,7 @@ $color-primario: #698e02;
 $color-secundario: #4d4d4d;
 //$color-secundario: #757575;
 //$color-seccion-cabecera: #a6c526;
-$color-seccion-cabecera: #6d6d6d; 
+$color-seccion-cabecera: #6d6d6d;
 //#b4cd4d
 
 
@@ -180,17 +180,17 @@ body {
   }
 
   .layout-content {
-    margin-left: 250px;    
+    margin-left: 250px;
     background-color: #fff;
     margin-top: 64px;
     //border: 2px dotted green;
   }
-  
+
   .layout-content-section {
     //border: 2px solid red;
     .layout-section {
       margin-top: 40px;
-      //border: 2px dotted green;      
+      //border: 2px dotted green;
     }
   }
 
@@ -211,6 +211,12 @@ body {
     }
   }
 
+  .subheader-text {
+    font-size: 15px;
+    color:#6e6e6e;
+
+  }
+
 }
 
 
@@ -219,7 +225,7 @@ body {
 
 
 
-    
-  
+
+
 
 

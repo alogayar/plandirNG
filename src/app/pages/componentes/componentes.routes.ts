@@ -1,3 +1,5 @@
+import { PanelComponent } from './panel/panel.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { TableComponent } from "./table/table.component";
 import { PanelsComponent } from "./panels/panels.component";
@@ -30,6 +32,8 @@ const componentesroutes: Routes = [
   { path: "message", component: MessageComponent, data: { url: "Message" } },
   { path: "panels", component: PanelsComponent, data: { url: "Panels" } },
   { path: "table", component: TableComponent, data: { url: "Table" } },
+  { path: "dropdown", component: DropdownComponent, data: { url: "Dropdown" } },
+  { path: "panel", component: PanelComponent, data: { url: "Panel" } },
   { path: "tabs", component: TabsComponent, data: { url: "Tabs" } },
 ];
 

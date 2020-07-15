@@ -15,6 +15,15 @@
   animation-fill-mode: both;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -23,78 +32,104 @@
     opacity: 1;
   }
 }
+
 .fadeIn {
-  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
 }
 
 /*-----------*/
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
 }
+
 body .header {
   background-color: #4d4d4d;
   display: block;
   padding: 0;
   height: 64px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9997;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
 }
+
 body .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   height: 100%;
 }
+
 body .navbar ul {
   list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
+
 body .navbar ul.nav-right {
   margin-right: 5px;
 }
+
 body .navbar ul.nav-right li {
   font-size: 14px;
   margin: 0 10px;
 }
+
 body .navbar ul.nav-right li a {
   display: block;
   padding: 0 20px;
 }
+
 body .navbar ul.nav-right li:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 body .navbar ul li {
   font-size: 14px;
   margin: auto;
 }
+
 body .navbar ul li a {
   color: #fff;
   text-decoration: none;
 }
+
 body .img-logo {
   height: 50px;
   margin-left: 20px;
   padding: 1px;
 }
+
 body .text-logo {
-  font-weight: 0;
+  font-weight: 000;
   font-size: 25px !important;
   letter-spacing: 2px;
   padding-left: 10px;
 }
+
 body .sidebar {
   position: fixed;
   left: 0;
@@ -104,12 +139,15 @@ body .sidebar {
   overflow-x: hidden;
   overflow-y: auto;
   width: 250px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   overflow-y: auto;
 }
+
 body .sidebar .sidebar_menu {
   overflow-y: auto;
 }
+
 body .sidebar .sidebar_menu span {
   font-size: 14px;
   width: 100%;
@@ -120,20 +158,31 @@ body .sidebar .sidebar_menu span {
   color: #6c757c;
   font-weight: 700;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
+
 body .sidebar .sidebar_menu span i {
   padding: 0 6px;
 }
+
 body .sidebar .sidebar_menu div {
   padding: 12px 15px;
   overflow: hidden;
   background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 body .sidebar .sidebar_menu div a {
   width: 100%;
   display: block;
@@ -144,32 +193,42 @@ body .sidebar .sidebar_menu div a {
   color: #404c51;
   text-decoration: none;
 }
+
 body .sidebar .sidebar_menu div a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   color: #698e02;
 }
+
 body .layout-content {
   margin-left: 250px;
   background-color: #fff;
   margin-top: 64px;
 }
+
 body .layout-content-section .layout-section {
   margin-top: 40px;
 }
+
 body .layout-content-section-cabecera {
   padding: 20px 20px;
   height: auto;
   background-color: #6d6d6d;
   color: #fff;
 }
+
 body .layout-content-section-cabecera span {
   font-size: 16px;
   display: block;
   padding-top: 10px;
   padding-left: 10px;
 }
+
 body .layout-content-section-cabecera span.section-titulo {
   font-size: 30px;
 }
 
+body .subheader-text {
+  font-size: 15px;
+  color: #6e6e6e;
+}
 /*# sourceMappingURL=style.css.map */

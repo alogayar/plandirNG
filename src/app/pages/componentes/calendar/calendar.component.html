@@ -1,1 +1,20 @@
-<p>calendar works!</p>
+<div class="layout-content-section animated fadeIn">
+  <app-section-header
+    textsubheader="Estilos personalizados para los calendarios <p-calendar>"
+  ></app-section-header>
+
+  <div class="container-fluid layout-section mt-4">
+    <p-tabView>
+      <p-tabPanel header="Calendario" leftIcon="fas fa-file-invoice">
+        <p-card header="Basico">
+          <div style="width:300px; height:300px;">
+            <p-calendar [(ngModel)]="value"></p-calendar>
+          </div>
+        </p-card>
+      </p-tabPanel>
+      <p-tabPanel header="Sass" leftIcon="fab fa-sass">
+        <app-section-html tipo="button"></app-section-html>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>

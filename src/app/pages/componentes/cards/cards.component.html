@@ -1,41 +1,67 @@
 <div class="layout-content-section animated fadeIn">
-    <app-section-header textsubheader="Estilos personalizados para los tarjetas <p-card>"></app-section-header>
+  <app-section-header
+    textsubheader="Estilos personalizados para los tarjetas <p-card>"
+  ></app-section-header>
 
-        <div class="container-fluid layout-section mt-4">
-            <p-tabView>
-              <p-tabPanel header="Cards" leftIcon="fas fa-file-invoice">
-                <p-card>
+  <div class="container-fluid layout-section mt-4">
+    <p-tabView>
+      <p-tabPanel header="Cards" leftIcon="fas fa-file-invoice">
+        <p-card>
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <p-card
+                  header="Dirección y Contacto"
+                  subheader="Casería de Escalona."
+                  [style]="{ width: '360px' }"
+                  styleClass="ui-card-shadow"
+                >
+                  <p-header>
+                    <img src="../../../../assets/img/descarga.jpg" />
+                  </p-header>
                   <div>
-                    <p-card header="Advanced Card" subheader="Subheader" [style]="{width: '360px'}" styleClass="ui-card-shadow">
-                        <p-header>
-                            <img  src="../../../../assets/img/logo.jpg" >
-                        </p-header>
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</div>
-                        <p-footer>
-                            <button pButton type="button" label="Save" icon="fa fa-check" style="margin-right: .25em"></button>
-                            <button pButton type="button" label="Cancel" icon="fa fa-times" class="ui-button-secondary"></button>
-                        </p-footer>
-                    </p-card>
-                  </div>
-                </p-card>
-                <p-card>
-                  <div>
-                    <p-card header="Simple Card" [style]="{width: '360px'}">
-                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-                            quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</div>
-                    </p-card>
-                  </div>
-                </p-card>
+                    Carretera. de Córdoba, s/n 23071 Jaén <br>
+                     Teléfono: 953 24 80 00 / 953 24 80 82. <br>
+                      Fax. 953 24 80 26 <br>
+                     <strong>Correo electrónico:</strong> infotributaria@dipujaen.es
 
-              </p-tabPanel>
-              <p-tabPanel header="Sass" leftIcon="fab fa-sass">
-                <app-section-html tipo="cards"></app-section-html>
-              </p-tabPanel>
-            </p-tabView>
+
+
+                  </div>
+                  <p-footer>
+                    <button
+                      pButton
+                      type="button"
+                      label="Save"
+                      icon="fa fa-check"
+                      style="margin-right: 0.25em;"
+                    ></button>
+                    <button
+                      pButton
+                      type="button"
+                      label="Cancel"
+                      icon="fa fa-times"
+                      class="ui-button-secondary"
+                    ></button>
+                  </p-footer>
+                </p-card>
+              </div>
+              <div class="col-6">
+                <div>
+                  <p-card header="Medidas (COVID-19)" [style]="{ width: '360px' }">
+                    <div>
+                      Debido a la situación generada por la actual crisis sanitaria provocada por el COVID-19, y atendiendo a las medidas de prevención y contención establecidas por esta Corporación para evitar aglomeraciones y prestar la mejor atención posible, rogamos soliciten CITA PREVIA en los teléfonos de Atención e Información al Ciudadano 953 248 082 y 902 079 907 para concretar fecha/hora de Atención Presencial en nuestras sedes.
+                    </div>
+                  </p-card>
+                </div>
+              </div>
+            </div>
           </div>
-
-
-
-
+        </p-card>
+      </p-tabPanel>
+      <p-tabPanel header="Sass" leftIcon="fab fa-sass">
+        <app-section-html tipo="cards"></app-section-html>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
 </div>

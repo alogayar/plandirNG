@@ -16,6 +16,8 @@ import { MenusComponent } from "./menus/menus.component";
 import { InputsComponent } from "./inputs/inputs.component";
 import { BreadcrumsComponent } from "./breadcrums/breadcrums.component";
 import { TabsComponent } from "./tabs/tabs.component";
+import { DropdownComponent } from "./dropdown/dropdown.component";
+import { PanelComponent } from "./panel/panel.component";
 
 /* Mdoulos */
 import { HttpClientModule } from "@angular/common/http";
@@ -32,7 +34,12 @@ import { InputNumberModule } from "primeng/inputnumber";
 import { InputTextModule } from "primeng/inputtext";
 import { InputSwitchModule } from "primeng/inputswitch";
 import { AccordionModule } from "primeng/accordion";
-
+import { CalendarModule } from "primeng/calendar";
+import { DataViewModule } from "primeng/dataview";
+import { DropdownModule } from "primeng/dropdown";
+import { PanelModule } from "primeng/panel";
+import { DialogModule } from "primeng/dialog";
+import { ListboxModule } from "primeng/listbox";
 /* Servicios */
 import { ComponentesService } from "../services/componentes.service";
 
@@ -54,6 +61,8 @@ import { componentesRoutes } from "./componentes.routes";
     PanelsComponent,
     TableComponent,
     MenusComponent,
+    DropdownComponent,
+    PanelComponent,
   ],
 
   imports: [
@@ -72,6 +81,12 @@ import { componentesRoutes } from "./componentes.routes";
     InputSwitchModule,
     InputTextModule,
     AccordionModule,
+    CalendarModule,
+    DataViewModule,
+    DropdownModule,
+    PanelModule,
+    DialogModule,
+    ListboxModule,
   ],
   exports: [SharedModule, CardModule],
   providers: [ComponentesService],

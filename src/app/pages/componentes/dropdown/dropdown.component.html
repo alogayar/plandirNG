@@ -1,20 +1,16 @@
 <div class="layout-content-section animated fadeIn">
   <app-section-header
-    textsubheader="Estilos personalizados para los ListBox <p-listbox>"
+    textsubheader="Estilos personalizados para los dropdowns <p-dropdowns>"
   ></app-section-header>
 
   <div class="container-fluid layout-section mt-4">
     <p-tabView>
-      <p-tabPanel header="ListBox" leftIcon="fas fa-file-invoice">
+      <p-tabPanel header="Dropdown" leftIcon="fas fa-file-invoice">
         <p-card header="Single">
           <div class="container">
             <div class="row">
               <div class="col-4">
-                <p-listbox [options]="municipios" [(ngModel)]="seleccionaMuni"></p-listbox>
-              </div>
-              <div class="col-4">
-                <pre class="ui-corner-all"><code class="language-json" pCode>{{seleccionaMuni | json}}</code></pre>
-
+                <p-dropdown [options]="municipios" [(ngModel)]="seleccionaMuni"></p-dropdown>
               </div>
             </div>
           </div>
@@ -27,11 +23,6 @@
     </p-tabView>
   </div>
 </div>
-
-
-
-
-
 
 
 

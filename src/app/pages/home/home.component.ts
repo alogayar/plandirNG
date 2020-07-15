@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: [],
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  texto:string;
+
+  constructor() {
+    this.texto = "PlandirNG es la hoja de estilos que se ha desarrollado para los componentes del Plan director"
+  }
 
   ngOnInit(): void {}
 }

@@ -1,12 +1,57 @@
+<div class="layout-content-section animated fadeIn">
+  <app-section-header
+    textsubheader="Estilos personalizados para los accordion <p-accordion>"
+  ></app-section-header>
 
-<p-accordion>
-  <p-accordionTab header="Header 1">
-     Content 1
-  </p-accordionTab>
-  <p-accordionTab header="Header 2">
-      Content 2
-  </p-accordionTab>
-  <p-accordionTab header="Header 3">
-      Content 3
-  </p-accordionTab>
-</p-accordion>
+  <div class="container-fluid layout-section mt-4">
+    <p-tabView>
+      <p-tabPanel header="Accordion" leftIcon="fas fa-file-invoice">
+        <p-card header="Default">
+          <div class="container">
+            <div class="col-4">
+              <span
+                style="
+                  font-weight: 500;
+                  display: block;
+                  font-size: 15px;
+                  margin-bottom: 10px;
+                  padding: 0;
+                  border-bottom: 1px solid #dbdbdb;
+                "
+                >Areas</span
+              >
+              <p-accordion>
+                <p-accordionTab header="Presidencia">
+                  La recogida y tratamiento de residuos en la provincia
+                  incorpora seis nuevos equipos La Administración Provincial, a
+                  través de la empresa mixta Resurja, ha realizado una inversión
+                  de más de un millón de euros en la adquisición de esta nueva
+                  maquinaria
+                </p-accordionTab>
+                <p-accordionTab header="Igualdad y Bienestar Social">
+                  Diputación convoca la octava edición de su Festival de
+                  Cortometrajes contra la Violencia de Género Hasta el 18 de
+                  septiembre se pueden presentar las obras, que han de girar
+                  sobre la temática de la violencia de género, su prevención y
+                  sensibilización contra la misma
+                </p-accordionTab>
+                <p-accordionTab
+                  header="Gobierno Electronico y Regimen Interior"
+                >
+                  Los consistorios podrán solicitar hasta el 3 de julio ayudas a
+                  la Diputación para adquirir nuevos equipamientos informáticos
+                  La Administración provincial abre el plazo para acceder a esta
+                  convocatoria, que está dotada con 200.000 euros y de la que se
+                  beneficiaron 42 municipios el pasado año
+                </p-accordionTab>
+              </p-accordion>
+            </div>
+          </div>
+        </p-card>
+      </p-tabPanel>
+      <p-tabPanel header="Sass" leftIcon="fab fa-sass">
+        <app-section-html tipo="button"></app-section-html>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
