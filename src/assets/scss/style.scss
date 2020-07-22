@@ -65,6 +65,12 @@ $fuente-Roboto: "Roboto";
 
 body {
   font-family: $fuente;
+  div.separador {
+    background: url('../../src/assets/img/patron_separador_verde.gif') no-repeat scroll right top transparent;
+    height: 3px;
+    width: 100%;
+    padding-bottom: 15px; 
+  }
 
   .header {
     background-color: $color-secundario;
@@ -238,28 +244,41 @@ body {
           font-size:14px;
           font-weight: 400;
           letter-spacing: 2px;   
-          color: $color-primario;       
+          color: $color-primario;        
         }
-
+        
         h3:first-child {
           margin-top:0px;
         }
+        .bullet{    
+          display:inline-block;
+          width:auto;
+          margin:auto;    
+          padding: 0 10px; 
+          background: url('../../src/assets/img/bullet_noticias.gif') no-repeat scroll left 5px transparent;
+        }
 
-        h3 {
+        h3 { 
+          
           font-size:16px;
           font-weight: 600;
           letter-spacing: 1px;   
-          margin: 40px 0;    
-          border-bottom: 1px solid $color-primario;   
+          //margin: 40px 0;    
+          //border-bottom: 1px solid $color-primario;   
         }
         p {
           line-height: 1.8em;
         }
 
+        .caja{
+          border:1px solid red;
+          background: url('../../src/assets/img/bullet_noticias.gif') no-repeat scroll left transparent;
+        }
+
 
       }
     }
-
+ 
     
   }
 }
