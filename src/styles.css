@@ -1,0 +1,3 @@
+/* Borrar luego y copiar a assets/css y hacer que el index.html apunte a assets/css/style.css*/
+
+@import '../dist/css/style.css';

@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
   texto:string;
 
   constructor() {
-    this.texto = "PlandirNG es la hoja de estilos que se ha desarrollado para los componentes del Plan director"
+    this.texto = "PlandirNG es la plantilla general de estilos CSS que se ha desarrollado para el Plan director"
   }
 
   ngOnInit(): void {}
