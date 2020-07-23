@@ -1,44 +1,78 @@
 <div class="layout-content-section animated fadeIn">
-  <app-section-header textsubheader="{{texto}}"></app-section-header>
+  <app-section-header textsubheader="{{ texto }}"></app-section-header>
 
   <div class="container-fluid layout-section">
-
     <style>
       .borde1 {
-        border:2px solid red;
+        border: 2px solid red;
       }
       .borde2 {
-        border:2px solid green;
+        border: 2px solid green;
       }
     </style>
 
     <div class="row content">
-      <div class="col-12 subcontent">  
-        <span class="bullet"></span>
-        <h3>PLANDIRNG</h3>
+      <div class="col-12 subcontent">
+        <h2>PLANDIRNG</h2>
         <div class="separador"></div>
-        <p>Es el resultado del proyecto <span class="destacado">PLANDIRNG SASS</span>, que pretende crear un template con estilos propios sobre la base de los componentes de PRIMENG, utilizando las ventajas de SASS, en la creacion de 
-          variables y funciones
+        <p>
+          Esta web desarrollada en Angular, pretende mostrar el template que se
+          ha creado con el proyecto
+          <span class="destacado">PLANDIRNG SASS.</span><br />
+          Este proyecto es la base de los estilos del nuevo plan director, tanto
+          a nivel de componentes, como a nivel de layout, paginas de acceso,
+          etc.. <br />
+
+          Está desarrollado en SASS, para utilizar las ventajas de, estructura
+          del proyecto con partials, utilización de variables, funciones y
+          mixins. <br />
+          El resultado o compilacion del proyecto, genera el archivo
+          PLANDIRNG.css, que es el que importaremos a nuestro proyecto Angular, y el que hemos importado en esta aplicación, para ver el aspecto final de todos los componentes.
         </p>
-        <h3>Dependencias</h3>
-        <p><span class="destacado">PLANDIRNG</span>esta basado en e</p>
-        <p>Esta web muestra </p>             
-        <h3>Usarla en nuestros proyectos</h3>
-        <p>En los proyectos Angular, la incluimos en el fichero de  </p>
-      </div>
-      <div class="col-12 subcontent borde2">
-        <div class="caja">fdfdsfd</div>
-        <h3 class="caja">fdsfdsd</h3>
+
+        <div class="row">
+          <div class="col-12">
+            <p-accordion>
+              <p-accordionTab header="Dependencias">
+                <p>
+                  PLANDIRNG utiliza el core de primeng y el primeicons, ya que
+                  mucho de los componentes que se han ido creando, internamente
+                  hacen referencia a los iconos de prime. Por lo tanto debemos
+                  tener instaladas estos dos paquetes.
+                </p>
+
+                <pre class="ui-corner-all"><code class="language-css" pCode>
+                  npm install primeng --save
+                  npm install primeicons --save
+                </code></pre>
+              </p-accordionTab>
+              <p-accordionTab header="Que .css incluye?">
+                PLANDIRNG en su base, incluye una serie de librerias, que no necesitamos importar y que forman parte de su core. <br>
+                La ventaja fundamental es que tendremos un único archivo .css (y una única llamada al servidor con todo lo que necesitemos).
+                <pre class="ui-corner-all" *ngIf="librerias"><code class="language-css" pCode>
+                  {{librerias | json}}
+                </code></pre>
+
+
+
+
+              </p-accordionTab>
+              <p-accordionTab header="Que .js incluye?">
+
+              </p-accordionTab>
+              <p-accordionTab header="Como usarla en nuestros proyectos">
+
+              </p-accordionTab>
+            </p-accordion>
+          </div>
+        </div>
+
+
+
+
+
 
       </div>
-
-      
     </div>
-
   </div>
-
-
-
 </div>
-
-

@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 const pagesroutes: Routes = [
     { path: 'home', component: HomeComponent,data: {'url':'Get Started'}  },
-    { path: 'estructura', component: EstructuraComponent,data: {'url':'Estructura'}  },    
+    { path: 'estructura', component: EstructuraComponent,data: {'url':'PlandirNG Sass'}  },
     { path: '', pathMatch: 'full', redirectTo: 'home' },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ]

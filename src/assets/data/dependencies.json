@@ -1,0 +1,13 @@
+{
+  "data":[
+    {
+      "normalize.css": "Para mantener los estilos similares en los navegadores"
+    },
+    {
+      "bootstrap.css": "Framework de la parte front para el desarrollo de aplicaciones web "
+    },
+    {
+      "fontawesome.css": "Libreria de iconos muy popular en el desarrollo web"
+    }
+  ]
+}

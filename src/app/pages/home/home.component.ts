@@ -1,3 +1,4 @@
+import { ComponentesService } from 'src/app/pages/services/componentes.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styles: [],
 })
 export class HomeComponent implements OnInit {
-  texto:string;
+  texto:any;
+  librerias:any;
 
-  constructor() {
-    this.texto = "PlandirNG es la plantilla general de estilos CSS que se ha desarrollado para el Plan director"
+  constructor(private service: ComponentesService) {
+    this.texto = "PlandirNG es el template o plantilla general de estilos CSS que se ha desarrollado para el Plan director"
+
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.getDependencies().then( data => { this.librerias = data; console.log(data) });
+  }
 }

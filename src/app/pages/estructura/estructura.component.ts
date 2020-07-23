@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class EstructuraComponent implements OnInit {
-  
+  texto:string;
+
 
 
   constructor() {
-   
+    this.texto = "Proyecto desarrollado con SASS, para crear la plantilla general de estilos CSS que utiliza el Plan director."
+
    }
 
   ngOnInit(): void {

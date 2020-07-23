@@ -1,6 +1,47 @@
-<div class="layout-content-section">
-  <app-section-header textsubheader="subheader estructura"></app-section-header>
-  <div class="container">
+<div class="layout-content-section animated fadeIn">
+  <app-section-header textsubheader="{{ texto }}"></app-section-header>
 
+  <div class="container-fluid layout-section">
+    <style>
+      .borde1 {
+        border: 2px solid red;
+      }
+      .borde2 {
+        border: 2px solid green;
+      }
+    </style>
+
+    <div class="row content">
+      <div class="col-12 subcontent">
+        <h2>PLANDIRNG-SASS</h2>
+        <div class="separador"></div>
+        <p>
+          Esta web desarrollada en Angular, pretende mostrar el template que se
+          ha creado con el proyecto
+          <span class="destacado">PLANDIRNG SASS.</span><br />
+          Este proyecto es la base de los estilos del nuevo plan director, tanto
+          a nivel de componentes, como a nivel de layout, paginas de acceso,
+          etc.. <br />
+
+          Esta desarrollado en SASS, para utilizar las ventajas de, estructura
+          del proyecto con partials, utilizacion de variables, funciones y
+          mixins. <br />
+          El resultado o compilacion del proyecto genera el archivo
+          PLANDIRNG.css, que es el que importaremos a nuestro proyecto Angular.
+        </p>
+
+        <div class="row">
+          <div class="col-12">
+
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
   </div>
 </div>

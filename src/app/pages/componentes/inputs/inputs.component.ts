@@ -16,6 +16,7 @@ export class InputsComponent implements OnInit {
   val6:string;
   value1: number = 42723;
   checked: boolean;
+  text:string;
 
   constructor() { }
 

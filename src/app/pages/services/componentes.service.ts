@@ -29,6 +29,7 @@ export class ComponentesService {
     "Yellow",
   ];
 
+
   constructor(private readonly _httpClient: HttpClient) {}
 
   public init(fichero: string) {
@@ -43,6 +44,15 @@ export class ComponentesService {
       .get<any>("assets/data/cars.json")
       .toPromise()
       .then((res) => <Car[]>res.data)
+      .then((data) => {
+        return data;
+      });
+  }
+  getDependencies() {
+    return this._httpClient
+      .get<any>("assets/data/dependencies.json")
+      .toPromise()
+      .then((res) => <any[]>res.data)
       .then((data) => {
         return data;
       });
