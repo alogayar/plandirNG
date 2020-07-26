@@ -88,7 +88,13 @@ import { componentesRoutes } from "./componentes.routes";
     DialogModule,
     ListboxModule,
   ],
-  exports: [SharedModule, CardModule],
+  exports: [
+    SharedModule,
+    CardModule,
+    DataViewModule,
+    AccordionModule,
+    PanelModule,
+  ],
   providers: [ComponentesService],
 })
 export class ComponentesModule {}

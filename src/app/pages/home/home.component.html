@@ -27,7 +27,9 @@
           del proyecto con partials, utilización de variables, funciones y
           mixins. <br />
           El resultado o compilacion del proyecto, genera el archivo
-          PLANDIRNG.css, que es el que importaremos a nuestro proyecto Angular, y el que hemos importado en esta aplicación, para ver el aspecto final de todos los componentes.
+          PLANDIRNG.css, que es el que importaremos a nuestro proyecto Angular,
+          y el que hemos importado en esta aplicación, para ver el aspecto final
+          de todos los componentes.
         </p>
 
         <div class="row">
@@ -47,31 +49,27 @@
                 </code></pre>
               </p-accordionTab>
               <p-accordionTab header="Que .css incluye?">
-                PLANDIRNG en su base, incluye una serie de librerias, que no necesitamos importar y que forman parte de su core. <br>
-                La ventaja fundamental es que tendremos un único archivo .css (y una única llamada al servidor con todo lo que necesitemos).
-                <pre class="ui-corner-all" *ngIf="librerias"><code class="language-css" pCode>
+                PLANDIRNG en su base, incluye una serie de librerias, que no
+                necesitamos importar y que forman parte de su core. <br />
+                La ventaja fundamental es que tendremos un único archivo .css (y
+                una única llamada al servidor con todo lo que necesitemos).
+
+                <div id="lista" *ngIf="librerias">
                   {{librerias | json}}
-                </code></pre>
 
 
+
+
+                </div>
 
 
               </p-accordionTab>
-              <p-accordionTab header="Que .js incluye?">
-
-              </p-accordionTab>
+              <p-accordionTab header="Que .js incluye?"> </p-accordionTab>
               <p-accordionTab header="Como usarla en nuestros proyectos">
-
               </p-accordionTab>
             </p-accordion>
           </div>
         </div>
-
-
-
-
-
-
       </div>
     </div>
   </div>

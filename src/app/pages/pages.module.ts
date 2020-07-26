@@ -7,7 +7,7 @@ import { pagesRoutes } from './pages.routes';
 import { SharedModule } from '../shared/shared.module';
 
 
-import {AccordionModule} from 'primeng/accordion';
+
 
 
 
@@ -26,7 +26,7 @@ import {AccordionModule} from 'primeng/accordion';
     CommonModule,
     ComponentesModule,
     SharedModule,
-    AccordionModule
+
 
   ],
   exports:[
@@ -34,7 +34,7 @@ import {AccordionModule} from 'primeng/accordion';
     EstructuraComponent,
     SharedModule,
     ComponentesModule,
-    AccordionModule
+
 
   ]
 })

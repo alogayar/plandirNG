@@ -1,13 +1,22 @@
 {
   "data":[
     {
-      "normalize.css": "Para mantener los estilos similares en los navegadores"
+      "dependency":"normalize.css",
+      "description": "Para mantener los estilos similares en los navegadores",
+      "url": "",
+      "image": ""
     },
     {
-      "bootstrap.css": "Framework de la parte front para el desarrollo de aplicaciones web "
+      "dependency":"bootstrap.css",
+      "description": "Framework de la parte front para el desarrollo de aplicaciones web ",
+      "url": "",
+      "image": ""
     },
     {
-      "fontawesome.css": "Libreria de iconos muy popular en el desarrollo web"
+      "dependency": "fontawesome.css",
+      "description": "Libreria de iconos muy popular en el desarrollo web",
+      "url": "",
+      "image": ""
     }
   ]
 }
