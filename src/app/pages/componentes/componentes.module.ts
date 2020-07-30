@@ -94,6 +94,7 @@ import { componentesRoutes } from "./componentes.routes";
     DataViewModule,
     AccordionModule,
     PanelModule,
+    
   ],
   providers: [ComponentesService],
 })

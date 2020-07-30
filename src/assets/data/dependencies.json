@@ -4,19 +4,22 @@
       "dependency":"normalize.css",
       "description": "Para mantener los estilos similares en los navegadores",
       "url": "",
-      "image": ""
+      "image": "https://naps.com.mx/blog/wp-content/uploads/2018/07/uso-de-normalize.jpeg",
+      "version": "8.0.1"
     },
     {
       "dependency":"bootstrap.css",
       "description": "Framework de la parte front para el desarrollo de aplicaciones web ",
       "url": "",
-      "image": ""
+      "image": "https://www.troopsf.com/file/bootstrap-logo.png",
+      "version": "4.5.0"
     },
     {
       "dependency": "fontawesome.css",
       "description": "Libreria de iconos muy popular en el desarrollo web",
       "url": "",
-      "image": ""
+        "image": "https://www.slavlee.de/fileadmin/user_upload/images/slavlee_shortcodes/fontawesome.png",
+      "version": "4.7.0"
     }
   ]
 }
