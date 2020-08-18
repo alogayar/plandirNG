@@ -1,1 +1,50 @@
-<p>menus works!</p>
+<div class="layout-content-section animated fadeIn">
+  <app-section-header
+    textsubheader="Estilos personalizados para los Menus <p-menu>"
+  ></app-section-header>
+
+  <div class="container-fluid layout-section mt-4">
+    <p-tabView>
+      <p-tabPanel header="Menu" leftIcon="fas fa-file-invoice">
+        <p-card header="Menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <p-menu [model]="items"></p-menu>
+              </div>
+
+            </div>
+          </div>
+        </p-card>
+
+      </p-tabPanel>
+      <p-tabPanel header="SubMenus" leftIcon="fas fa-file-invoice">
+        <p-card header="Submenu">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <p-menu [model]="subitems"></p-menu>
+              </div>
+
+            </div>
+          </div>
+        </p-card>
+
+      </p-tabPanel>
+      <p-tabPanel header="PlandirNG-Sass" leftIcon="fab fa-sass">
+        <app-section-html tipo="dropdowns"></app-section-html>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

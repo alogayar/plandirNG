@@ -40,6 +40,8 @@ import { DropdownModule } from "primeng/dropdown";
 import { PanelModule } from "primeng/panel";
 import { DialogModule } from "primeng/dialog";
 import { ListboxModule } from "primeng/listbox";
+import { MenuModule } from "primeng/menu";
+import { MessagesModule } from "primeng/messages";
 /* Servicios */
 import { ComponentesService } from "../services/componentes.service";
 
@@ -87,6 +89,8 @@ import { componentesRoutes } from "./componentes.routes";
     PanelModule,
     DialogModule,
     ListboxModule,
+    MenuModule,
+    MessagesModule
   ],
   exports: [
     SharedModule,
@@ -94,7 +98,6 @@ import { componentesRoutes } from "./componentes.routes";
     DataViewModule,
     AccordionModule,
     PanelModule,
-    
   ],
   providers: [ComponentesService],
 })
