@@ -1,3 +1,4 @@
+import { FieldsetComponent } from './fieldset/fieldset.component';
 import { PanelComponent } from './panel/panel.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -35,6 +36,7 @@ const componentesroutes: Routes = [
   { path: "dropdown", component: DropdownComponent, data: { url: "Dropdown" } },
   { path: "panel", component: PanelComponent, data: { url: "Panel" } },
   { path: "tabs", component: TabsComponent, data: { url: "Tabs" } },
+  { path: "fieldset", component: FieldsetComponent, data: { url: "Fieldset" } },
 ];
 
 export const componentesRoutes = RouterModule.forRoot(componentesroutes);

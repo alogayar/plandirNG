@@ -42,11 +42,13 @@ import { DialogModule } from "primeng/dialog";
 import { ListboxModule } from "primeng/listbox";
 import { MenuModule } from "primeng/menu";
 import { MessagesModule } from "primeng/messages";
+import { FieldsetModule } from "primeng/fieldset";
 /* Servicios */
 import { ComponentesService } from "../services/componentes.service";
 
 /* Rutas */
 import { componentesRoutes } from "./componentes.routes";
+import { FieldsetComponent } from "./fieldset/fieldset.component";
 
 @NgModule({
   declarations: [
@@ -65,6 +67,7 @@ import { componentesRoutes } from "./componentes.routes";
     MenusComponent,
     DropdownComponent,
     PanelComponent,
+    FieldsetComponent,
   ],
 
   imports: [
@@ -90,7 +93,8 @@ import { componentesRoutes } from "./componentes.routes";
     DialogModule,
     ListboxModule,
     MenuModule,
-    MessagesModule
+    MessagesModule,
+    FieldsetModule
   ],
   exports: [
     SharedModule,
