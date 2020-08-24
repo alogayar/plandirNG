@@ -1,7 +1,7 @@
-import { FieldsetComponent } from './fieldset/fieldset.component';
-import { PanelComponent } from './panel/panel.component';
-import { DropdownComponent } from './dropdown/dropdown.component';
-import { AccordionComponent } from './accordion/accordion.component';
+import { FieldsetComponent } from "./fieldset/fieldset.component";
+
+import { DropdownComponent } from "./dropdown/dropdown.component";
+import { AccordionComponent } from "./accordion/accordion.component";
 import { TableComponent } from "./table/table.component";
 import { PanelsComponent } from "./panels/panels.component";
 import { MessageComponent } from "./message/message.component";
@@ -17,7 +17,11 @@ import { BreadcrumsComponent } from "./breadcrums/breadcrums.component";
 import { TabsComponent } from "./tabs/tabs.component";
 
 const componentesroutes: Routes = [
-  { path: "accordion", component: AccordionComponent, data: { url: "Accordion" } },
+  {
+    path: "accordion",
+    component: AccordionComponent,
+    data: { url: "Accordion" },
+  },
   { path: "buttons", component: ButtonsComponent, data: { url: "Buttons" } },
   {
     path: "breadcrums",
@@ -34,7 +38,7 @@ const componentesroutes: Routes = [
   { path: "panels", component: PanelsComponent, data: { url: "Panels" } },
   { path: "table", component: TableComponent, data: { url: "Table" } },
   { path: "dropdown", component: DropdownComponent, data: { url: "Dropdown" } },
-  { path: "panel", component: PanelComponent, data: { url: "Panel" } },
+
   { path: "tabs", component: TabsComponent, data: { url: "Tabs" } },
   { path: "fieldset", component: FieldsetComponent, data: { url: "Fieldset" } },
 ];

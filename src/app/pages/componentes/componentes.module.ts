@@ -17,7 +17,6 @@ import { InputsComponent } from "./inputs/inputs.component";
 import { BreadcrumsComponent } from "./breadcrums/breadcrums.component";
 import { TabsComponent } from "./tabs/tabs.component";
 import { DropdownComponent } from "./dropdown/dropdown.component";
-import { PanelComponent } from "./panel/panel.component";
 
 /* Mdoulos */
 import { HttpClientModule } from "@angular/common/http";
@@ -43,6 +42,8 @@ import { ListboxModule } from "primeng/listbox";
 import { MenuModule } from "primeng/menu";
 import { MessagesModule } from "primeng/messages";
 import { FieldsetModule } from "primeng/fieldset";
+import { MenubarModule } from "primeng/menubar";
+import { TableModule } from "primeng/table";
 /* Servicios */
 import { ComponentesService } from "../services/componentes.service";
 
@@ -66,7 +67,6 @@ import { FieldsetComponent } from "./fieldset/fieldset.component";
     TableComponent,
     MenusComponent,
     DropdownComponent,
-    PanelComponent,
     FieldsetComponent,
   ],
 
@@ -94,7 +94,9 @@ import { FieldsetComponent } from "./fieldset/fieldset.component";
     ListboxModule,
     MenuModule,
     MessagesModule,
-    FieldsetModule
+    FieldsetModule,
+    MenubarModule,
+    TableModule,
   ],
   exports: [
     SharedModule,

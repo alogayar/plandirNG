@@ -9,19 +9,36 @@ import { MenuItem } from "primeng/api";
 export class MenusComponent implements OnInit {
   items: MenuItem[];
   subitems: MenuItem[];
+  menubar: MenuItem[];
 
   constructor() {}
 
   ngOnInit() {
-    this.items = [
-      { label: "Presidencia", icon: "pi pi-fw pi-chevron-circle-right" },
-      { label: "Recursos Humanos", icon: "pi pi-fw pi-chevron-circle-right" },
-      { label: "Servicios", icon: "pi pi-fw pi-chevron-circle-right" },
-      { label: "Gtr", icon: "pi pi-fw pi-chevron-circle-right" },
-      { label: "Herramientas", icon: "pi pi-fw pi-chevron-circle-right" },
-      { label: "Administración", icon: "pi pi-fw pi-chevron-circle-right" },
-      { label: "Secretaría", icon: "pi pi-fw pi-chevron-circle-right" },
-    ];
+
+    this.items = [{
+      label: 'File',
+      items: [
+          {label: 'New', icon: 'pi pi-fw pi-plus'},
+          {label: 'Download', icon: 'pi pi-fw pi-download'}
+      ]
+  },
+  {
+      label: 'Edit',
+      items: [
+          {label: 'Add User', icon: 'pi pi-fw pi-user-plus'},
+          {label: 'Remove User', icon: 'pi pi-fw pi-user-minus'}
+      ]
+  }];
+
+    // this.items = [
+    //   { label: "Presidencia", icon: "pi pi-fw pi-chevron-circle-right" },
+    //   { label: "Recursos Humanos", icon: "pi pi-fw pi-chevron-circle-right" },
+    //   { label: "Servicios", icon: "pi pi-fw pi-chevron-circle-right" },
+    //   { label: "Gtr", icon: "pi pi-fw pi-chevron-circle-right" },
+    //   { label: "Herramientas", icon: "pi pi-fw pi-chevron-circle-right" },
+    //   { label: "Administración", icon: "pi pi-fw pi-chevron-circle-right" },
+    //   { label: "Secretaría", icon: "pi pi-fw pi-chevron-circle-right" },
+    // ];
     this.subitems = [
       {
         label: "Presidencia",
@@ -48,6 +65,28 @@ export class MenusComponent implements OnInit {
             label: "Informes",
             icon: "pi pi-fw pi-file-o",
           },
+        ],
+      },
+    ];
+    this.menubar = [
+      {
+        label: "File",
+        items: [
+          {
+            label: "New",
+            icon: "pi pi-fw pi-plus",
+            items: [{ label: "Project" }, { label: "Other" }],
+          },
+          { label: "Open" },
+          { label: "Quit" },
+        ],
+      },
+      {
+        label: "Edit",
+        icon: "pi pi-fw pi-pencil",
+        items: [
+          { label: "Delete", icon: "pi pi-fw pi-trash" },
+          { label: "Refresh", icon: "pi pi-fw pi-refresh" },
         ],
       },
     ];
