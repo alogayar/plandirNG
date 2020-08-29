@@ -54,9 +54,6 @@ export class NoticiasComponent implements OnInit {
       subTitulo: null,
       tipo: "Secundaria",
     },
-  ];
-
-  private ultimasNoticias: any[] = [
     {
       targetEnlaceImagen: "_blank",
       titleEnlaceImagen:
@@ -77,6 +74,10 @@ export class NoticiasComponent implements OnInit {
       subTitulo: null,
       tipo: "Secundaria",
     },
+  ];
+
+  public ultimasNoticias: any[] = [
+    
     {
       targetEnlaceImagen: null,
       titleEnlaceImagen: null,
