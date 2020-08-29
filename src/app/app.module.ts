@@ -10,18 +10,20 @@ import { PagesModule } from './pages/pages.module';
 
 
 
-@NgModule({ 
+
+@NgModule({
   declarations: [
-    AppComponent,    
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     appRoutes,
-    PagesModule
-    
+    PagesModule,
+
+
   ],
-  providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

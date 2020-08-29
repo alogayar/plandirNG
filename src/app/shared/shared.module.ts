@@ -9,6 +9,7 @@ import { SectionHtmlComponent } from "./content/section-html/section-html.compon
 import { CardModule } from "primeng/card";
 import { CodeHighlighterModule } from "primeng/codehighlighter";
 import { TabViewModule } from "primeng/tabview";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { TabViewModule } from "primeng/tabview";
     BreadcrumbsComponent,
     SectionHeaderComponent,
     SectionHtmlComponent,
+    FooterComponent,
   ],
   imports: [
     RouterModule,
@@ -31,7 +33,8 @@ import { TabViewModule } from "primeng/tabview";
     BreadcrumbsComponent,
     SectionHeaderComponent,
     SectionHtmlComponent,
-    
+    FooterComponent
+
   ],
 })
 export class SharedModule {}

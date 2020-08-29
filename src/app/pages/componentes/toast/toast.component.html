@@ -1,0 +1,26 @@
+<div class="layout-content-section animated fadeIn">
+  <app-section-header
+    textsubheader="Estilos personalizados para las mensajes Toast  <p-toast>"
+  ></app-section-header>
+
+  <div class="container-fluid layout-section mt-4">
+    <p-tabView>
+      <p-tabPanel header="Toast" leftIcon="fas fa-file-invoice">
+        <p-card header="Basicos">
+          <div class="container">
+            <div class="row">
+              <div class="col-10">
+                <p-toast position="center-center"></p-toast>
+                <button type="button" pButton (click)="addSingle()" label="Success" class="ui-button-success"></button>
+              </div>
+            </div>
+          </div>
+        </p-card>
+      </p-tabPanel>
+
+      <p-tabPanel header="PlandirNG-Sass" leftIcon="fab fa-sass">
+        <app-section-html tipo="dropdowns"></app-section-html>
+      </p-tabPanel>
+    </p-tabView>
+  </div>
+</div>

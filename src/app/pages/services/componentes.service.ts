@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { Car } from "../componentes/dataview/dataview.component";
 
+
 @Injectable({
   providedIn: "root",
 })
@@ -29,8 +30,10 @@ export class ComponentesService {
     "Yellow",
   ];
 
+  constructor(
+    private readonly _httpClient: HttpClient,
 
-  constructor(private readonly _httpClient: HttpClient) {}
+  ) {}
 
   public init(fichero: string) {
     return this._httpClient.get(
@@ -57,4 +60,5 @@ export class ComponentesService {
         return data;
       });
   }
+
 }

@@ -17,6 +17,8 @@ import { InputsComponent } from "./inputs/inputs.component";
 import { BreadcrumsComponent } from "./breadcrums/breadcrums.component";
 import { TabsComponent } from "./tabs/tabs.component";
 import { DropdownComponent } from "./dropdown/dropdown.component";
+import { FieldsetComponent } from "./fieldset/fieldset.component";
+import { ToastComponent } from "./toast/toast.component";
 
 /* Mdoulos */
 import { HttpClientModule } from "@angular/common/http";
@@ -25,7 +27,6 @@ import { FormsModule } from "@angular/forms";
 
 import { ButtonModule } from "primeng/button";
 import { TabViewModule } from "primeng/tabview";
-import { ToastModule } from "primeng/toast";
 import { CardModule } from "primeng/card";
 import { InputMaskModule } from "primeng/inputmask";
 import { BreadcrumbModule } from "primeng/breadcrumb";
@@ -44,12 +45,14 @@ import { MessagesModule } from "primeng/messages";
 import { FieldsetModule } from "primeng/fieldset";
 import { MenubarModule } from "primeng/menubar";
 import { TableModule } from "primeng/table";
+import { ContextMenuModule } from "primeng/contextmenu";
+import { ToastModule } from "primeng/toast";
+
 /* Servicios */
 import { ComponentesService } from "../services/componentes.service";
 
 /* Rutas */
 import { componentesRoutes } from "./componentes.routes";
-import { FieldsetComponent } from "./fieldset/fieldset.component";
 
 @NgModule({
   declarations: [
@@ -68,6 +71,7 @@ import { FieldsetComponent } from "./fieldset/fieldset.component";
     MenusComponent,
     DropdownComponent,
     FieldsetComponent,
+    ToastComponent,
   ],
 
   imports: [
@@ -97,6 +101,7 @@ import { FieldsetComponent } from "./fieldset/fieldset.component";
     FieldsetModule,
     MenubarModule,
     TableModule,
+    ContextMenuModule,
   ],
   exports: [
     SharedModule,

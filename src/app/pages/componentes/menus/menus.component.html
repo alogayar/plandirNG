@@ -45,6 +45,21 @@
         </p-card>
 
       </p-tabPanel>
+      <p-tabPanel header="ContextMenu" leftIcon="fas fa-file-invoice">
+        <p-card header="Menubar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h3 #texto>Pulsa el boton derecho</h3>
+                <br>
+                <p-contextMenu [target]="texto" [model]="items"></p-contextMenu>
+              </div>
+
+            </div>
+          </div>
+        </p-card>
+
+      </p-tabPanel>
       <p-tabPanel header="PlandirNG-Sass" leftIcon="fab fa-sass">
         <app-section-html tipo="dropdowns"></app-section-html>
       </p-tabPanel>

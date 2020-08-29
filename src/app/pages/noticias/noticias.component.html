@@ -1,0 +1,85 @@
+<div class="layout-content-section animated fadeIn">
+  <app-section-header textsubheader="{{ texto }}"></app-section-header>
+
+  <div class="container-fluid layout-section">
+    <div class="row content">
+      <div class="col-12 subcontent">
+        <h2>MODULO NOTICIAS</h2>
+        <i class="fas fa-users"></i>
+
+        <div class="separador"></div>
+
+        <p-panel
+          header="Ultimas Noticias"
+          [toggleable]="true"
+          [style]="{ 'margin-bottom': '20px' }"
+        >
+          <style>
+            .borde1 {
+              border: 2px solid red;
+            }
+            .borde2 {
+              border: 2px solid blue;
+            }
+          </style>
+
+          <div id="noticias" class="container-fluid">
+            <div class="row primera-fila borde1">
+              <div class="col-6" id="ultimas-noticias">
+                <div class="row">
+                  <ng-template
+                    ngFor
+                    let-noticia
+                    [ngForOf]="primeraNoticias"
+                    let-i="index"
+                  >
+                    <div class="col-4 ultimas-noticias-img">
+                      <a
+                        target="{{ noticia.targetEnlaceImagen }}"
+                        title="{{ noticia.titleEnlaceImagen }}"
+                        href="{{ noticia.hrefEnlaceImagen }}"
+                      >
+                        <img
+                          class="{{ noticia.classImagen }}"
+                          src="{{ noticia.srcImagen }}"
+                          alt="{{ noticia.altImagen }}"
+                          title="{{ noticia.titleImagen }}"
+                        />
+                      </a>
+                    </div>
+                    <div class="col-8 ultimas-noticias-text">
+                      <a
+                        target="{{ noticia.targetEnlaceImagen }}"
+                        href="{{ noticia.hrefTexto }}"
+                      >
+                        <p>{{ noticia.titulo }}</p>
+                      </a>
+                      <p>
+                        {{ noticia.subTitulo }}
+                      </p>
+                    </div>
+                  </ng-template>
+                </div>
+              </div>
+            </div>
+            <div class="row segunda-fila borde1">
+              <ng-template ngFor let-noticia [ngForOf]="segundaNoticias" let-i="index">
+                  {{noticia.titulo}}
+                  <div class="col-2 ultimas-noticias2-img">
+                      <a target="{{noticia.targetEnlaceImagen}}" title="{{noticia.titleEnlaceImagen}}" href="{{noticia.hrefEnlaceImagen}}">
+                          <img class="{{noticia.classImagen}}" src="{{noticia.srcImagen}}" alt="{{noticia.altImagen}}" title="{{noticia.titleImagen}}">
+                      </a>
+                  </div>
+                  <div class="col-4 ultimas-noticias-text">
+                      <a target="{{noticia.targetEnlaceImagen}}" href="{{noticia.hrefTexto}}">
+                          <p>{{noticia.titulo}}</p>
+                      </a>
+                  </div>
+              </ng-template>
+          </div>
+          </div>
+        </p-panel>
+      </div>
+    </div>
+  </div>
+</div>
