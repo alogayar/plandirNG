@@ -59,7 +59,7 @@
                     </div>
                   </div>
                 </ng-template>
-                <div class="row segunda-noticia">
+                <div class="row segunda-noticia mt-5">
                   <ng-template
                     ngFor
                     let-noticia
@@ -80,7 +80,7 @@
                         />
                       </a>                     
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 m-0 px-1">
                       <a
                         target="{{ noticia.targetEnlaceImagen }}"
                         href="{{ noticia.hrefTexto }}"
@@ -94,10 +94,11 @@
               <div class="col-6 ultimas-noticias">
                 <div class="row">
                   <ng-template ngFor let-noticia [ngForOf]="ultimasNoticias" let-i="index">
-                      <div class="col-12">
+                      <div class="col-12 noticia">
                           <a target="_blank" href="{{noticia.hrefTexto}}">
                               <p>{{noticia.titulo}}</p>
                           </a>
+                          <hr> 
                       </div>
                   </ng-template>
               </div>
