@@ -21,77 +21,90 @@
               border: 2px solid blue;
             }
           </style>
-          <ng-template
-            ngFor
-            let-noticia
-            [ngForOf]="primeraNoticias"
-            let-i="index"
-          >
-            <div id="noticias" class="container-fluid">
-              <div class="row principal">
-                <div class="col-6 seccion-noticias">
-                  <div class="row primera-fila mb-3 ">
-                    <div class="col-5 imagen-principal ">
+
+          <div id="noticias" class="container-fluid">
+            <div class="row fila-principal">
+              <div class="col-6">
+                <ng-template
+                  ngFor
+                  let-noticia
+                  [ngForOf]="primeraNoticias"
+                  let-i="index"
+                >
+                  <div class="row primera-noticia">
+                    <div class="col-4">
                       <a
                         target="{{ noticia.targetEnlaceImagen }}"
                         title="{{ noticia.titleEnlaceImagen }}"
                         href="{{ noticia.hrefEnlaceImagen }}"
                       >
                         <img
-                          class="rounded img-fluid bordeVerde"
+                          class="img-rounded img-responsive img-fluid"
                           src="{{ noticia.srcImagen }}"
                           alt="{{ noticia.altImagen }}"
                           title="{{ noticia.titleImagen }}"
                         />
                       </a>
                     </div>
-                    <div class="col-7 noticia-principal "></div>
-                  </div>
-                  <div class="row segunda-fila ">
-                    <ng-template
-                      ngFor
-                      let-noticia
-                      [ngForOf]="segundaNoticias"
-                      let-i="index"
-                    >
-                      <div class="col-2 ">
-                        <a
-                          target="{{ noticia.targetEnlaceImagen }}"
-                          title="{{ noticia.titleEnlaceImagen }}"
-                          href="{{ noticia.hrefEnlaceImagen }}"
-                        >
-                          <img
-                            class="rounded img-fluid bordeVerde"
-                            src="{{ noticia.srcImagen }}"
-                            alt="{{ noticia.altImagen }}"
-                            title="{{ noticia.titleImagen }}"
-                          />
-                        </a>
-                      </div>
-                      <div class="col-4 ">
-                        <a
-                          target="{{ noticia.targetEnlaceImagen }}"
-                          href="{{ noticia.hrefTexto }}"
-                        >
-                          <p>{{ noticia.titulo }}</p>
-                        </a>
-                      </div>
-                    </ng-template>
-                  </div>                  
-                </div>
-                <div class="col-6 seccion-ultimas-noticias">
-                  <ng-template ngFor let-noticia [ngForOf]="ultimasNoticias" let-i="index">
-                    <div class="col-12">
-                        <a target="_blank" href="{{noticia.hrefTexto}}">
-                            <p>{{noticia.titulo}}</p>
-                        </a>
+                    <div class="col-8 box-noticia">
+                      <a
+                        target="{{ noticia.targetEnlaceImagen }}"
+                        href="{{ noticia.hrefTexto }}"
+                      >
+                        <p class="titular">{{ noticia.titulo }}</p>
+                      </a>
+                      <p class="subtitulo">
+                        {{ noticia.subTitulo }}
+                      </p>
                     </div>
+                  </div>
                 </ng-template>
-
-                </div>
+                <div class="row segunda-noticia">
+                  <ng-template
+                    ngFor
+                    let-noticia
+                    [ngForOf]="segundaNoticias"
+                    let-i="index"
+                  >
+                    <div class="col-2">
+                      <a
+                        target="{{ noticia.targetEnlaceImagen }}"
+                        title="{{ noticia.titleEnlaceImagen }}"
+                        href="{{ noticia.hrefEnlaceImagen }}"
+                      >
+                        <img
+                          class="img-rounded img-responsive img-fluid"
+                          src="{{ noticia.srcImagen }}"
+                          alt="{{ noticia.altImagen }}"
+                          title="{{ noticia.titleImagen }}"
+                        />
+                      </a>                     
+                    </div>
+                    <div class="col-4">
+                      <a
+                        target="{{ noticia.targetEnlaceImagen }}"
+                        href="{{ noticia.hrefTexto }}"
+                      >
+                        <p>{{ noticia.titulo }}</p>
+                      </a>
+                    </div>
+                  </ng-template>
+                  </div>
+              </div>
+              <div class="col-6 ultimas-noticias">
+                <div class="row">
+                  <ng-template ngFor let-noticia [ngForOf]="ultimasNoticias" let-i="index">
+                      <div class="col-12">
+                          <a target="_blank" href="{{noticia.hrefTexto}}">
+                              <p>{{noticia.titulo}}</p>
+                          </a>
+                      </div>
+                  </ng-template>
+              </div>
+  
               </div>
             </div>
-          </ng-template>
+          </div>
         </p-panel>
       </div>
     </div>
