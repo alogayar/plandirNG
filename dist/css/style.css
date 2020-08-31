@@ -1,0 +1,299 @@
+/* --------------------------------------------------
+  Estilos propios para el proyecto Angular PlandirNG
+ -------------------------------------------------- */
+/*---------
+  COLORES
+-----------*/
+/*---------
+  FUENTES
+-----------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Animated */
+/* You can add global styles to this file, and also import other style files */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+/*--------------------------------------------------*/
+/*------------------------------
+  ESTILOS PARA LA WEB PLANDIRNG
+-------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+body div.separador {
+  text-align: left;
+  display: block;
+  background: url("../../src/assets/img/patron_separador_verde.gif") no-repeat scroll right top transparent;
+  height: 3px;
+  width: 13%;
+  padding-bottom: 15px;
+}
+
+body .header {
+  background-color: #4d4d4d;
+  display: block;
+  padding: 0;
+  height: 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9997;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+body .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+body .navbar ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .navbar ul.nav-right {
+  margin-right: 5px;
+}
+
+body .navbar ul.nav-right li {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+body .navbar ul.nav-right li a {
+  display: block;
+  padding: 0 20px;
+}
+
+body .navbar ul.nav-right li:not(.dipu):hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body .navbar ul li {
+  font-size: 14px;
+  margin: auto;
+}
+
+body .navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+body .navbar ul li span {
+  color: #698e02;
+  text-align: right;
+  display: block;
+}
+
+body .navbar ul li span.dipu {
+  font-size: 15px;
+  text-shadow: 1px 1px 0px #7a7a7a;
+}
+
+body .img-logo {
+  height: 50px;
+  margin-left: 20px;
+  padding: 1px;
+}
+
+body .text-logo {
+  font-weight: 000;
+  font-size: 25px !important;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+body .sidebar {
+  position: fixed;
+  left: 0;
+  top: 64px;
+  height: calc(100% - 64px);
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 250px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+body .sidebar .sidebar_menu {
+  overflow-y: auto;
+}
+
+body .sidebar .sidebar_menu span {
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  background-color: #f6fce9;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3f3f3' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: #6c757c;
+  font-weight: 700;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+body .sidebar .sidebar_menu span i {
+  padding: 0 6px;
+}
+
+body .sidebar .sidebar_menu div {
+  padding: 12px 15px;
+  overflow: hidden;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .sidebar .sidebar_menu div a {
+  width: 100%;
+  display: block;
+  padding: 10px 6px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #404c51;
+  text-decoration: none;
+}
+
+body .sidebar .sidebar_menu div a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #698e02;
+}
+
+body .layout-content {
+  margin-left: 250px;
+  background-color: #fff;
+  margin-top: 64px;
+}
+
+body .layout-content-section-cabecera {
+  padding: 20px 20px;
+  height: auto;
+  background-color: #6d6d6d;
+  color: #fff;
+}
+
+body .layout-content-section-cabecera span {
+  font-size: 16px;
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+body .layout-content-section-cabecera span.section-titulo {
+  font-size: 30px;
+}
+
+body .layout-content-section .layout-section {
+  margin-top: 35px;
+}
+
+body .layout-content-section .layout-section .content .subcontent {
+  padding: 0 30px;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: #333;
+  margin: 0 auto;
+}
+
+body .layout-content-section .layout-section .content h2 {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+body .layout-content-section .layout-section .content h2:first-child {
+  margin-top: 0px;
+}
+
+body .layout-content-section .layout-section .content p {
+  line-height: 1.6em;
+  padding: 1.5em;
+}
+
+body .layout-content-section .layout-section .content p-accordionTab p {
+  padding: 1.5em;
+  line-height: 1.6em;
+}
+
+body .layout-content-section .layout-section .destacado {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #698e02;
+}
+
+body .layout-content-section .layout-section #lista .ui-dataview .ui-dataview-header {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
