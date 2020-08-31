@@ -1,13 +1,22 @@
 import { Component, OnInit } from "@angular/core";
 
-
 @Component({
   selector: "app-noticias",
   templateUrl: "./noticias.component.html",
   styleUrls: ["./noticias.component.css"],
 })
 export class NoticiasComponent implements OnInit {
-  texto: string = "HOLA";
+  texto: string = "Componente de noticias para el Home";
+
+  public usuario: any;
+
+  public enlacesUsuario: any[] = [
+    {'icono': 'disabled fas fa-puzzle-piece', 'controlador': 'CONCOCATORIAS'},
+    {'icono': 'fas fa-puzzle-piece', 'controlador': 'USUARIOS'},
+  ];
+
+
+
 
   public primeraNoticias: any[] = [
     {
@@ -77,7 +86,6 @@ export class NoticiasComponent implements OnInit {
   ];
 
   public ultimasNoticias: any[] = [
-    
     {
       targetEnlaceImagen: null,
       titleEnlaceImagen: null,
@@ -155,9 +163,20 @@ export class NoticiasComponent implements OnInit {
     },
   ];
 
-  constructor(
+  constructor() {}
 
-  ) {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    this.usuario = {
+      dni: "77321022",
+      codigoUsuario: "NOVA0011",
+      pcu: "PCU3423",
+      enail: "aogayar@dipujaen.es",
+      responsable: "Juanfra",
+      nombre: "Alberto Ogayar",
+      area: "Desarrollo",
+      telefono: "651667788",
+      fechaBaja: 0,
+      departamento: "Desarrollo",
+    };
+  }
 }
