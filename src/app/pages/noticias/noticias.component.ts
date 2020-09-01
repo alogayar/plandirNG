@@ -50,10 +50,10 @@ export class NoticiasComponent implements OnInit {
       hrefEnlaceImagen:
         "http://www.dipujaen.es/export/sites/default/galerias/galeriaImagenes/diputacion/dipujaen/actualidad/2020-agosto/4-semana/20200722_Reunixn_sobre_depuradoras_x1x.jpg",
       classImagen: "img-rounded img-responsive bordeVerde",
-      srcImagen:
-        "http://www.dipujaen.es/export/sites/default/galerias/galeriaImagenes/diputacion/dipujaen/actualidad/2020-agosto/4-semana/20200722_Reunixn_sobre_depuradoras_x1x.jpg",
-      altImagen:
-        "Reunión celebrada en julio con los alcaldes sobre la puesta en marcha de estos proyectos. JPG de 121 KB | Diputación de Jaén | Ampliar imagen",
+      srcImagen: ' ',
+        //"http://www.dipujaen.es/export/sites/default/galerias/galeriaImagenes/diputacion/dipujaen/actualidad/2020-agosto/4-semana/20200722_Reunixn_sobre_depuradoras_x1x.jpg",
+      altImagen: '',
+        //"Reunión celebrada en julio con los alcaldes sobre la puesta en marcha de estos proyectos. JPG de 121 KB | Diputación de Jaén | Ampliar imagen",
       titleImagen:
         "Reunión celebrada en julio con los alcaldes sobre la puesta en marcha de estos proyectos. JPG de 121 KB - | Diputación de Jaén | Ampliar imagen",
       hrefTexto:

@@ -6,7 +6,6 @@
       <div class="col-12 subcontent px-3">
         <h2>MODULO NOTICIAS</h2>
 
-
         <div class="separador"></div>
 
         <p-panel
@@ -40,6 +39,10 @@
                         href="{{ noticia.hrefEnlaceImagen }}"
                       >
                         <img
+                          *ngIf="
+                            noticia.srcImagen && noticia.altImagen;
+                            else SinImagen
+                          "
                           class="img-rounded img-responsive img-fluid"
                           src="{{ noticia.srcImagen }}"
                           alt="{{ noticia.altImagen }}"
@@ -74,11 +77,21 @@
                         href="{{ noticia.hrefEnlaceImagen }}"
                       >
                         <img
+                          *ngIf="
+                            noticia.srcImagen && noticia.altImagen;
+                            else SinImagen
+                          "
                           class="img-rounded img-responsive img-fluid"
                           src="{{ noticia.srcImagen }}"
                           alt="{{ noticia.altImagen }}"
                           title="{{ noticia.titleImagen }}"
                         />
+                        <ng-template #SinImagen>
+                          <img
+                            class="img-rounded img-responsive img-fluid"
+                            src="../../../assets/img/noimage.png"
+                          />
+                        </ng-template>
                       </a>
                     </div>
                     <div class="col-4 m-0 px-1">
@@ -212,7 +225,7 @@
                     let-i="index"
                   >
                     <div class="col-lg-3 col-md-3 col-sm-3 enlace ">
-                      <i class="{{ enlace.icono }}"></i>
+                      <i class=" disabled {{ enlace.icono }}"></i>
                       <p>CONVOCATORIAS</p>
                     </div>
                   </ng-template>
