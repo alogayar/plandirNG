@@ -19,6 +19,7 @@ import { TabsComponent } from "./tabs/tabs.component";
 import { DropdownComponent } from "./dropdown/dropdown.component";
 import { FieldsetComponent } from "./fieldset/fieldset.component";
 import { ToastComponent } from "./toast/toast.component";
+import { SpinnerComponent } from './spinner/spinner.component';
 
 /* Mdoulos */
 import { HttpClientModule } from "@angular/common/http";
@@ -72,6 +73,7 @@ import { componentesRoutes } from "./componentes.routes";
     DropdownComponent,
     FieldsetComponent,
     ToastComponent,
+    SpinnerComponent,
   ],
 
   imports: [

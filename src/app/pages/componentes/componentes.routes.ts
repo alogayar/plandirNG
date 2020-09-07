@@ -1,3 +1,4 @@
+import { SpinnerComponent } from './spinner/spinner.component';
 import { DropdownComponent } from "./dropdown/dropdown.component";
 import { AccordionComponent } from "./accordion/accordion.component";
 import { TableComponent } from "./table/table.component";
@@ -40,6 +41,7 @@ const componentesroutes: Routes = [
   { path: "table", component: TableComponent, data: { url: "Table" } },
   { path: "dropdown", component: DropdownComponent, data: { url: "Dropdown" } },
   { path: "tabs", component: TabsComponent, data: { url: "Tabs" } },
+  { path: "spinner", component: SpinnerComponent, data: { url: "Spinner" } },
   { path: "fieldset", component: FieldsetComponent, data: { url: "Fieldset" } },
 ];
 

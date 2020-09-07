@@ -1,0 +1,10 @@
+.preloader {
+  display: block !important;
+  position: relative;
+
+}
+
+.loader {
+  display: block !important;
+  position: relative;
+}
