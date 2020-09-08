@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: "app-noticias",
@@ -7,6 +8,11 @@ import { Component, OnInit } from "@angular/core";
 })
 export class NoticiasComponent implements OnInit {
   texto: string = "Componente de noticias para el Home";
+
+  public formulario: FormGroup;
+
+  public listadoUsuarios: any[];
+
 
   public usuario: any;
 
