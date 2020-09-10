@@ -19,7 +19,7 @@ export class DropdownComponent implements OnInit {
 
   constructor() {
     this.municipios = [
-      { label: "Selecciona Municipio", value: null },
+      { label: "", value: null },
       { label: "Albanchez de Magina", value: { id: 1, name: "Albanchez de Magina", code: "1" } },
       { label: "Alcala la Real", value: { id: 2, name: "Alcala la Real", code: "2" } },
       { label: "Alcaudete", value: { id: 3, name: "Alcaudete", code: "3" } },
