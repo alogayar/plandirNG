@@ -65,6 +65,7 @@ $fuente-Roboto: "Roboto";
 
 body {
   font-family: $fuente;
+  margin-bottom:80px;
   div.separador {
     text-align: left;
     display: block;
@@ -73,6 +74,7 @@ body {
     height: 3px;
     width: 13%;
     padding-bottom: 15px;
+
   }
 
   .header {
