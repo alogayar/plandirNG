@@ -1,3 +1,4 @@
+import { PaginatorComponent } from './../../components/paginator/paginator.component';
 import { SpinnerComponent } from './spinner/spinner.component';
 import { DropdownComponent } from "./dropdown/dropdown.component";
 import { AccordionComponent } from "./accordion/accordion.component";
@@ -43,6 +44,7 @@ const componentesroutes: Routes = [
   { path: "tabs", component: TabsComponent, data: { url: "Tabs" } },
   { path: "spinner", component: SpinnerComponent, data: { url: "Spinner" } },
   { path: "fieldset", component: FieldsetComponent, data: { url: "Fieldset" } },
+  { path: "paginator", component: PaginatorComponent, data: { url: "Paginator" } },
 ];
 
 export const componentesRoutes = RouterModule.forRoot(componentesroutes);

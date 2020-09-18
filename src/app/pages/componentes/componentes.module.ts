@@ -20,6 +20,7 @@ import { DropdownComponent } from "./dropdown/dropdown.component";
 import { FieldsetComponent } from "./fieldset/fieldset.component";
 import { ToastComponent } from "./toast/toast.component";
 import { SpinnerComponent } from "./spinner/spinner.component";
+import { PaginatorComponent } from './paginator/paginator.component';
 
 /* Mdoulos */
 import { HttpClientModule } from "@angular/common/http";
@@ -75,6 +76,7 @@ import { componentesRoutes } from "./componentes.routes";
     FieldsetComponent,
     ToastComponent,
     SpinnerComponent,
+    PaginatorComponent,
   ],
 
   imports: [

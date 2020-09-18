@@ -2586,13 +2586,15 @@ body .ui-button-danger:enabled:active {
 /* Datepicker */
 .ui-datepicker {
   width: auto;
-  padding: 0.2em;
+  padding: 0.85em !important;
   position: absolute;
+  background-color: #fff;
   /* Header */
 }
 
 .ui-datepicker .ui-state-highlight {
   color: #fff;
+  padding: 0.3em;
 }
 
 .ui-datepicker .ui-datepicker-inline {
@@ -2610,6 +2612,7 @@ body .ui-button-danger:enabled:active {
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: 0.5em 0;
+  background-color: #dbdbdb;
 }
 
 .ui-datepicker .ui-datepicker-prev,
