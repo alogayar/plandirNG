@@ -1,4 +1,5 @@
-import { PaginatorComponent } from './../../components/paginator/paginator.component';
+import { PaginatorComponent } from './paginator/paginator.component';
+
 import { SpinnerComponent } from './spinner/spinner.component';
 import { DropdownComponent } from "./dropdown/dropdown.component";
 import { AccordionComponent } from "./accordion/accordion.component";

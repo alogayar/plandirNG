@@ -6,7 +6,7 @@
   <div class="container-fluid layout-section mt-4">
     <p-tabView>
       <p-tabPanel header="Paginator" leftIcon="fas fa-file-invoice">
-        <p-card header="Default">
+        <p-card header="">
           <div class="container">
             <div class="col-5">
               <span
@@ -18,9 +18,9 @@
                   padding: 0;
                   border-bottom: 1px solid #dbdbdb;
                 "
-                >Areas</span
+                >Paginator</span
               >
-
+              <p-paginator [rows]="10" [totalRecords]="120" [rowsPerPageOptions]="[10,20,30]"></p-paginator>
 
             </div>
           </div>

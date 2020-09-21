@@ -20,7 +20,7 @@ import { DropdownComponent } from "./dropdown/dropdown.component";
 import { FieldsetComponent } from "./fieldset/fieldset.component";
 import { ToastComponent } from "./toast/toast.component";
 import { SpinnerComponent } from "./spinner/spinner.component";
-import { PaginatorComponent } from './paginator/paginator.component';
+import { PaginatorComponent } from "./paginator/paginator.component";
 
 /* Mdoulos */
 import { HttpClientModule } from "@angular/common/http";
@@ -50,6 +50,7 @@ import { TableModule } from "primeng/table";
 import { ContextMenuModule } from "primeng/contextmenu";
 import { ToastModule } from "primeng/toast";
 import { CheckboxModule } from "primeng/checkbox";
+import { PaginatorModule } from "primeng/paginator";
 
 /* Servicios */
 import { ComponentesService } from "../services/componentes.service";
@@ -108,6 +109,7 @@ import { componentesRoutes } from "./componentes.routes";
     TableModule,
     ContextMenuModule,
     CheckboxModule,
+    PaginatorModule
   ],
   exports: [
     SharedModule,
