@@ -57,6 +57,7 @@ import { ComponentesService } from "../services/componentes.service";
 
 /* Rutas */
 import { componentesRoutes } from "./componentes.routes";
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -78,6 +79,7 @@ import { componentesRoutes } from "./componentes.routes";
     ToastComponent,
     SpinnerComponent,
     PaginatorComponent,
+    DialogComponent,
   ],
 
   imports: [

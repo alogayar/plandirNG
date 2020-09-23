@@ -1,3 +1,4 @@
+import { DialogComponent } from './dialog/dialog.component';
 import { PaginatorComponent } from './paginator/paginator.component';
 
 import { SpinnerComponent } from './spinner/spinner.component';
@@ -35,6 +36,7 @@ const componentesroutes: Routes = [
   { path: "calendar", component: CalendarComponent, data: { url: "Calendar" } },
   { path: "cards", component: CardsComponent, data: { url: "Cards" } },
   { path: "dataview", component: DataviewComponent, data: { url: "Dataview" } },
+  { path: "dialog", component: DialogComponent, data: { url: "Dialog" } },
   { path: "inputs", component: InputsComponent, data: { url: "Inputs" } },
   { path: "listbox", component: ListboxComponent, data: { url: "Listbox" } },
   { path: "menus", component: MenusComponent, data: { url: "Menus" } },

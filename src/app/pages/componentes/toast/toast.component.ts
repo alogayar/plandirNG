@@ -16,7 +16,7 @@ export class ToastComponent implements OnInit {
   }
 
   addSingle() {
-    this.messageService.add({severity:'success', summary:'Service Message', life: 5000000000000, detail:'Via MessageService'});
+    this.messageService.add({severity:'info', summary:'Service Message', life: 5000000000000, detail:'Via MessageService constructor(private messageService: MessageService) {} constructor(private messageService: MessageService) {}'});
 }
 }
 
